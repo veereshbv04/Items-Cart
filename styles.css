@@ -15,13 +15,22 @@ form{
    
     background-color: rgb(235, 223, 65);
     color:brown;
-
     padding: 1rem;
     margin: 4rem;
 }
 
 #addBtn{
-    margin: auto;
+    
     align-items: center;
     margin-top: 2rem;
+}
+
+.item-list{
+    background-color:yellowgreen;
+    padding: 2rem;
+}
+
+.item{
+    margin: 2rem;
+    background-color: green;
 }
