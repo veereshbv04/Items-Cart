@@ -33,6 +33,18 @@ form{
 
 .item{
     margin: 2rem;
-    background-color: green;
+    background-color: rgb(233, 157, 44);
    list-style: none;
+   padding: 1rem;
+   font-style: normal;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: purple;
+}
+
+#searchInputDiv{
+    width: 100%;
+    height: 4rem;
+}
+#searchItem, #userInput{
+    height: 2rem;
 }
