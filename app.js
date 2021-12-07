@@ -3,11 +3,14 @@ const addBtn = document.getElementById("addBtn");
 const parentDiv = document.querySelector(".item-list");
 
 addBtn.addEventListener("click", (event)=>{
+    
     event.preventDefault();
     const userInput =userItem.value;
-    const div = document.createElement("div");
+    userItem.value = null
+    const div = document.createElement("li");
     const text = document.createTextNode(userInput);
     div.appendChild(text);
+    div.classList.add("item");
     parentDiv.appendChild(div);
      
 })
