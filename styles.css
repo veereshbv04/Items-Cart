@@ -28,9 +28,11 @@ form{
 .item-list{
     background-color:yellowgreen;
     padding: 2rem;
+    
 }
 
 .item{
     margin: 2rem;
     background-color: green;
+   list-style: none;
 }
