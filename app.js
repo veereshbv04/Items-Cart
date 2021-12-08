@@ -3,7 +3,8 @@ const addBtn = document.getElementById("addBtn");
 const ulDiv = document.querySelector(".item-list");
 const serachItem = document.getElementById("searchItem");
 const liDiv = document.querySelectorAll(".item");
-
+const spanDiv = document.querySelectorAll("span");
+const itemList = document.getElementById("allItems");
 
 addBtn.addEventListener("click", (event)=>{
     
@@ -15,9 +16,28 @@ addBtn.addEventListener("click", (event)=>{
     div.appendChild(text);
     div.classList.add("item");
     ulDiv.appendChild(div);
+
+    const span = document.createElement("span");
+    const spanText = document.createTextNode("X");
+    span.appendChild(spanText);
+    span.classList.add("delete")
+    div.appendChild(span);
      
 })
-    
+  
+function spanDelete(event){
+    console.log(event);
+}
+
+itemList.addEventListener("click", (event) => {
+    if(event.target.classList.contains("delete")){
+        if(confirm("Are You Sure? This Action cannot be undone")){
+            var li = event.target.parentElement;
+            itemList.removeChild(li);
+        }
+    }
+})
+
 serachItem.addEventListener("keyup", () =>{
     
     var searchItem = serachItem.value.toUpperCase();

@@ -48,3 +48,14 @@ form{
 #searchItem, #userInput{
     height: 2rem;
 }
+
+span{
+    float: right;
+    color: blue;
+    font-weight: bolder;
+    font-size: large;
+    background-color: cornsilk;
+    border: solid  rgb(231, 48, 24);
+    padding: 0.16rem;
+    border-radius: 0.2rem;
+}
