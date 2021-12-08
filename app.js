@@ -25,9 +25,6 @@ addBtn.addEventListener("click", (event)=>{
      
 })
   
-function spanDelete(event){
-    console.log(event);
-}
 
 itemList.addEventListener("click", (event) => {
     if(event.target.classList.contains("delete")){
